@@ -7,7 +7,7 @@
   <title>Soleil</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel="manifest" href="/manifest.json">
+<link rel="manifest" href="manifest.json">
 <script>src="sw.js"</script> 
 <script>
   window.addEventListener('load', ()=>{
@@ -48,7 +48,7 @@
         <p class="text-danger">
           <span class="visually-hidden">Danger: </span>
           <nav class="nav">
-            <a class="nav-link active" aria-current="page" href="#">Active</a>
+            <a class="nav-link active" aria-current="page" href="#">Activité</a>
             <a class="nav-link" href="#">Plages</a>
             <a class="nav-link" href="#">Restaurants</a>
             <a class="nav-link disabled">Guides</a>
@@ -95,15 +95,9 @@
     </nav>
     <div class="container-fluid mt-3">
     <h1></h1>
+    <a href="#" onclick="addToHomeScreen()" class="btn" type="button">Install App</a>
     <p><h4>Soleil : l’offre la plus complète et la plus diversifiée</h4> <span id="installer l'application ?"></span></p>
-    <script>
-      window.addEventListener('load', function() {
-          var MyPWA = window.prompt("Installer l'application ? :"),
-              paragraph = document.createElement("p");
-          paragraph.appendChild(document.createTextNode(MaPWA));
-          document.body.appendChild(paragraph);
-      });
-      
+    <script>  
   </script>
   
     <div class="card-group">
@@ -112,8 +106,8 @@
         <div class="card-body">
           <h5 class="card-title">Coucher de soleil</h5>
           <p class="card-text">L’été est une saison de plaisir, d’excitation et de détente. N’oubliez pas d’apporter ces qualités aux gens quand vous faites de la publicité sur la plage !</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          <button type="button" class="btn btn-primary" data-bs-toggle="button" autocomplete="off">Toggle button</button>
+          <p class="card-text"><small class="text-muted"></small></p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="button" autocomplete="off">Voir plus</button>
         </div>
       </div>
       <div class="card">
@@ -121,23 +115,23 @@
         <div class="card-body">
           <h5 class="card-title">Moments de détente </h5>
           <p class="card-text">L’été est une saison de plaisir, d’excitation et de détente. N’oubliez pas d’apporter ces qualités aux gens quand vous faites de la publicité sur la plage !</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          <button type="button" class="btn btn-primary" data-bs-toggle="button" autocomplete="off">Toggle button</button>
+          <p class="card-text"><small class="text-muted"></small></p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="button" autocomplete="off">Voir plus</button>
         </div>
       </div>
       <div class="card">
         <img src="ete_vacances_plage_lunettes_soleil_esprit_libre_voyage.jpg" class="card-img-top" alt="ete_vacances_plage_lunettes_soleil_esprit_libre_voyage.jpg">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
+          <h5 class="card-title">Une vue magnifique</h5>
           <p class="card-text">Une plage est un lieu d’exploration et de découverte. Organisez une chasse au trésor amusante pour votre campagnes de marketing sur la plage.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          <button type="button" class="btn btn-primary" data-bs-toggle="button" autocomplete="off">Toggle button</button>
+          <p class="card-text"><small class="text-muted"></small></p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="button" autocomplete="off">Voir plus</button>
         </div>
       </div>
     </div>
    
   </main>
-
+ 
   <script src="index.js"></script>
 
 </body>
