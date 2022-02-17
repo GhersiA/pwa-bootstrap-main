@@ -8,6 +8,14 @@
   <title>Document</title>
 </head>
 <body>
-  <p>Cette page est hors ligne </p>
+  <div class="alert alert-danger" role="alert">
+    Page hors ligne. Connexion non disponible.   </div>
+
+    <div class="d-grid gap-2 col-sm-3 mx-auto">
+      <button onclick="notif()" class="btn btn-danger">Revenir</button>
+      <button onClick="window.location.reload();" class="btn btn-light">Réessayer</button>
+
+</div>
+
 </body>
 </html>
